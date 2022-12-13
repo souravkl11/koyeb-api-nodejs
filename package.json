@@ -1,0 +1,15 @@
+{
+  "name": "koyeb-api",
+  "version": "1.0.2",
+  "description": "Koyeb REST API wrapper for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "souravkl11",
+  "license": "ISC",
+  "keywords": ["koyeb","wrapper","koyeb-api"],
+  "dependencies": {
+    "axios": "^1.2.1"
+  }
+}
