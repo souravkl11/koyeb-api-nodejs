@@ -3,6 +3,11 @@
 
 An unofficial API wrapper for Koyeb Rest API (v1.0.0). This module allows you to interact with the Koyeb platform in a simple, programmatic way using asyncronous functions.
 
+## Install
+
+```
+npm install koyeb-api
+```
 ## Usage/Examples
 ### Import it to your code using
 ```javascript
