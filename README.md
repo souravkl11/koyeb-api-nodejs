@@ -36,29 +36,24 @@ const service_id = "your-service-id" // Get service id using Koyeb.getServices()
 const result = await Koyeb.getServiceInfo()
 console.log(result)
 ```
-### Creating/Updating environment variables
+### Creating/Updating service environment variables
 ```javascript
 const options = {
     Var: "PORT"
     value: "3000"
-    appName: "my-app"
+    serviceName: "my-service"
 }
-const result = await Koyeb.setEnv(options)
-if (result) {
-    return console.log("Success!") 
-    } else {
-    return console.error("Failed")
-}
+await Koyeb.setEnv(options)
 ```
-### Redeploying service/app
+### Redeploy service
 ```javascript
-const appName = "my-app"
-const result = await Koyeb.reDeploy(appName)
-if (result) {
-    return console.log("Success!") 
-    } else {
-    return console.error("Failed")
-}
+const serviceName = "my-service"
+await Koyeb.reDeploy(serviceName)
+```
+### Pause service
+```javascript
+const serviceName = "my-service"
+await Koyeb.pauseService(serviceName)
 ```
 ### Get activity list
 ```javascript
